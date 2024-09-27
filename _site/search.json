@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Chayanont Piyawatcharavijit, and I’m currently a master’s student at Monash University studying Business Analytics. I’m really passionate about data and how it can be used to solve real-world problems. I have a background in computer engineering, which has given me a solid mix of technical and analytical skills. Right now, I’m focused on learning how to use analytics and machine learning to make better decisions and find insights that can make a difference in business."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog Template",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "Song Billboard Analysis in the 2010s\n\n\n\n\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nChayanont Piyawatcharavijit\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog Template\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\nEmi Tanaka\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html",
+    "href": "posts/SongAnalysis/index.html",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "",
+    "text": "We analyzed Billboard’s top 100 songs over the past decade and found that long-lasting hits, like “Radioactive” and “Sail,” share key audio features—higher energy and lower acousticness. Essentially, the more energetic and less acoustic a song is, the more likely it is to stay popular. While danceability and speechiness don’t seem to make a big difference, energy and acousticness are like the secret sauce to a song’s longevity on the charts.\n\nPeople around the world loves music people are enjoying to their favorite tracks 20.7 minutes each week on average which is almost a day! (Childs-Young 2023). This come to this question have you ever wondered what makes couple of songs like Radioactive by Imagine Dragons, stay on the billboard for so long? In this analysis, we dive deeply into the trend of Billboard’s top 100 songs over the past decade, exploring key audio features like energy and acousticness."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#data-source",
+    "href": "posts/SongAnalysis/index.html#data-source",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Data source",
+    "text": "Data source\nThere are two data sources for this analysis report retrieved by @TidytuesdayData2021 First Billboard’s top 100 chart songs, a standard record chart in the US for songs by weekly Billboard magazine. Second, is the data source provided by Spotify, one of the most popular music stream services. Data dictionary for both data sources are provided in the data dictionary"
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#data-wrangling",
+    "href": "posts/SongAnalysis/index.html#data-wrangling",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Data wrangling",
+    "text": "Data wrangling\nFor the data wangling part, all plots and tables were joined with each other by using song_id, a concatenate of song name and performer, as a key. For Figure 1 and Figure 2, data frames have been pivoted into long for an analysis. Before plotting into various perspectives by ggplot2 and table."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#summary",
+    "href": "posts/SongAnalysis/index.html#summary",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Summary",
+    "text": "Summary\nThis article mainly discusses an analysis of Billboard’s top 100 over the past decade in the 2010s that stayed on the chart for a long time and have higher energy and lower acousticness music features. A change in listener preference is notable in both energy and acousticness reflecting taste change."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#background",
+    "href": "posts/SongAnalysis/index.html#background",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Background",
+    "text": "Background\n\nAccording to IFPI, each week on average, people are listening to music for 20.7 minutes, almost a day. With raising of music streaming services enhances accessibility to listeners globally.\n\nThe second and third sentences under the introduction section state the importance of music by reference a research from worldwide organizations. Also, the article states a globalization of music streaming services which easily access for people around the world."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#main-result",
+    "href": "posts/SongAnalysis/index.html#main-result",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Main result",
+    "text": "Main result\n\nTracks with more energy and less acoustic sound are more likely to stay popular on the charts for longer amounts of time.\n\nIn the fourth paragraph, under the key results section, there are 2 important factors that affect the top chart. Despite, a downward trend in the bigger picture, long-lasting songs seem to follow a blockquote above."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#summary-1",
+    "href": "posts/SongAnalysis/index.html#summary-1",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Summary",
+    "text": "Summary\n\nEnergy and acousticness trend shifting can indicate a transition in listener preference.\n\nThe second last sentence under the conclusion stated the importance of energy and acoustics to affect the listener. This could imply for the reader to reflect on this statement of the article."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#sec-appendix",
+    "href": "posts/SongAnalysis/index.html#sec-appendix",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Data dictionary",
+    "text": "Data dictionary\nbillboard dataset\n\n\n\n\n\n\n\n\nvariable\nvariable\ndescription\n\n\n\n\nweek_id\nstring\nDirect identifier of the week of the Billboard.\n\n\nsong\nstring\nSong name\n\n\nperformer\nstring\nPerformer name\n\n\nsong_id\nstring\nDirect identifier of the song, concatenate of song and performer.\n\n\nweeks_on_chart\ndouble\nIteration of the week on the chart.\n\n\n\naudio_features dataset (For fourth to the ninth variable are an indicator ranging from 0.0 - 1.0)\n\n\n\n\n\n\n\n\nvariable\nvariable\ndescription\n\n\n\n\nsong_id\nstring\nDirect identifier of the song, concatenate of song and performer.\n\n\nsong\nstring\nSong name\n\n\nspotify_genre\nstring\nGenre of the song by Spotify\n\n\ndanceability\ndouble\nDescribe how danceable the tracks are based on a combination of the various musical elements.\n\n\nenergy\ndouble\nDescribe a measure of intensity and activity of the tracks based on perceptual features.\n\n\nspeechiness\ndouble\nDescribe the occurrence of spoken words.\n\n\nacousticness\ndouble\nDescribe the acousticness of the track.\n\n\ninstrumentalness\ndouble\nDescribe the instrumentalness of the track. The higher the value, the higher the portion of the instrument.\n\n\nliveness\ndouble\nDescribe the chance of the tracks that are live performances.\n\n\nvalence\ndouble\nDescribe the positiveity of the track. Higher valence means higher positivity of the track.\n\n\nspotify_track_popularity\ndouble\nPopularity of the track calculated by Spotify algorithm"
+  }
+]
