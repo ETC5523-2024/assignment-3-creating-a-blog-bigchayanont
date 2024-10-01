@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Chayanont Piyawatcharavijit, and I’m currently a master’s student at Monash University studying Business Analytics. I’m really passionate about data and how it can be used to solve real-world problems. I have a background in computer engineering, which has given me a solid mix of technical and analytical skills. Right now, I’m focused on learning how to use analytics and machine learning to make better decisions and find insights that can make a difference in business."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html",
+    "href": "posts/SongAnalysis/index.html",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "",
+    "text": "People around the world loves music as they are enjoying to their favorite tracks 20.7 minutes each week on average which is almost a day! (Childs-Young 2023). This come to this question have you ever wondered what makes couple of songs like Radioactive by Imagine Dragons, stay on the billboard for so long? In this analysis, we dive deeply into the trend of Billboard’s top 100 songs over the past decade, exploring key audio features like energy and acousticness."
+  },
+  {
+    "objectID": "posts/SongAnalysis/index.html#sec-appendix",
+    "href": "posts/SongAnalysis/index.html#sec-appendix",
+    "title": "Song Billboard Analysis in the 2010s",
+    "section": "Data dictionary",
+    "text": "Data dictionary\nbillboard dataset\n\n\n\n\n\n\n\n\nvariable\nvariable\ndescription\n\n\n\n\nweek_id\nstring\nDirect identifier of the week of the Billboard.\n\n\nsong\nstring\nSong name\n\n\nperformer\nstring\nPerformer name\n\n\nsong_id\nstring\nDirect identifier of the song, concatenate of song and performer.\n\n\nweeks_on_chart\ndouble\nIteration of the week on the chart.\n\n\n\naudio_features dataset (For fourth to the ninth variable are an indicator ranging from 0.0 - 1.0)\n\n\n\n\n\n\n\n\nvariable\nvariable\ndescription\n\n\n\n\nsong_id\nstring\nDirect identifier of the song, concatenate of song and performer.\n\n\nsong\nstring\nSong name\n\n\nspotify_genre\nstring\nGenre of the song by Spotify\n\n\ndanceability\ndouble\nDescribe how danceable the tracks are based on a combination of the various musical elements.\n\n\nenergy\ndouble\nDescribe a measure of intensity and activity of the tracks based on perceptual features.\n\n\nspeechiness\ndouble\nDescribe the occurrence of spoken words.\n\n\nacousticness\ndouble\nDescribe the acousticness of the track.\n\n\ninstrumentalness\ndouble\nDescribe the instrumentalness of the track. The higher the value, the higher the portion of the instrument.\n\n\nliveness\ndouble\nDescribe the chance of the tracks that are live performances.\n\n\nvalence\ndouble\nDescribe the positiveity of the track. Higher valence means higher positivity of the track.\n\n\nspotify_track_popularity\ndouble\nPopularity of the track calculated by Spotify algorithm"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Song Billboard Analysis in the 2010s\n\n\n\n\n\n\nanalysis\n\n\nspotify\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nChayanont Piyawatcharavijit\n\n\n\n\n\n\nNo matching items"
+  }
+]
