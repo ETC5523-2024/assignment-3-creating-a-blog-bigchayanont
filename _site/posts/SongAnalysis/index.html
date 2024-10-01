@@ -88,12 +88,14 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -133,6 +135,7 @@ div.csl-indent {
       <h1 class="title">Song Billboard Analysis in the 2010s</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">analysis</div>
+                <div class="quarto-category">spotify</div>
               </div>
                   </div>
   </div>
@@ -161,7 +164,23 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#uncovering-the-secret-ingreidents-behind-those-chart-toppers-a-decade-of-music-trends" id="toc-uncovering-the-secret-ingreidents-behind-those-chart-toppers-a-decade-of-music-trends" class="nav-link active" data-scroll-target="#uncovering-the-secret-ingreidents-behind-those-chart-toppers-a-decade-of-music-trends">Uncovering the secret ingreidents behind those chart-toppers: a decade of music trends</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data description</a></li>
+  <li><a href="#changing-trends-in-audio-features-on-the-billboard-charts-throughout-the-2010s-an-analysis" id="toc-changing-trends-in-audio-features-on-the-billboard-charts-throughout-the-2010s-an-analysis" class="nav-link" data-scroll-target="#changing-trends-in-audio-features-on-the-billboard-charts-throughout-the-2010s-an-analysis">Changing Trends in Audio Features on the Billboard Charts Throughout the 2010s: An analysis</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#sec-appendix" id="toc-sec-appendix" class="nav-link" data-scroll-target="#sec-appendix">Data dictionary</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -169,17 +188,23 @@ div.csl-indent {
 
 
 
-<section id="tldr" class="level1">
-<h1>TLDR;</h1>
-<blockquote class="blockquote">
-<p>We analyzed Billboard’s top 100 songs over the past decade and found that long-lasting hits, like “Radioactive” and “Sail,” share key audio features—higher energy and lower acousticness. Essentially, the more energetic and less acoustic a song is, the more likely it is to stay popular. While danceability and speechiness don’t seem to make a big difference, energy and acousticness are like the secret sauce to a song’s longevity on the charts.</p>
-</blockquote>
-<p>People around the world loves music people are enjoying to their favorite tracks 20.7 minutes each week on average which is almost a day! <span class="citation" data-cites="childs-youngIFPIGlobalStudy2023">(<a href="#ref-childs-youngIFPIGlobalStudy2023" role="doc-biblioref">Childs-Young 2023</a>)</span>. This come to this question have you ever wondered what makes couple of songs like Radioactive by Imagine Dragons, stay on the billboard for so long? In this analysis, we dive deeply into the trend of Billboard’s top 100 songs over the past decade, exploring key audio features like energy and acousticness.</p>
+<section id="uncovering-the-secret-ingreidents-behind-those-chart-toppers-a-decade-of-music-trends" class="level1">
+<h1>Uncovering the secret ingreidents behind those chart-toppers: a decade of music trends</h1>
+<p>People around the world loves music as they are enjoying to their favorite tracks 20.7 minutes each week on average which is almost a day! <span class="citation" data-cites="childs-youngIFPIGlobalStudy2023">(<a href="#ref-childs-youngIFPIGlobalStudy2023" role="doc-biblioref">Childs-Young 2023</a>)</span>. This come to this question have you ever wondered what makes couple of songs like Radioactive by Imagine Dragons, stay on the billboard for so long? In this analysis, we dive deeply into the trend of Billboard’s top 100 songs over the past decade, exploring key audio features like energy and acousticness.</p>
 </section>
-<section id="key-results" class="level1">
-<h1>Key results</h1>
-<p>This <a href="#fig-audio-feat" class="quarto-xref">Figure&nbsp;1</a> indicates each track feature measured by Spotify, a music streaming service. In the 2010s billboard from <a href="#fig-audio-feat" class="quarto-xref">Figure&nbsp;1</a>, most of the indicators had almost the same value across the 2010s. However, four features show their significant difference in the past 10 years. Acousticness, speechiness, and danceability features were the three highest increases across 10 years. On the other hand, the energy feature had decreased the most by -1.3. This reflects the listener trend that transitions from the feature mentioned.</p>
-<p>Even though music taste is a subjective topic to conclude, many people use music as an action tendency to move around which could imply as high danceability of the trend <span class="citation" data-cites="MusicEmotionWellBeing">(<a href="#ref-MusicEmotionWellBeing" role="doc-biblioref"><span>“Music, <span>Emotion</span>, and <span>Well-Being</span> | <span>Psychology Today Australia</span>”</span> n.d.</a>)</span>. Despite a slightly downward trend of valence, arousal can by effected by music valence influence emotional response<span class="citation" data-cites="hofbauerEmotionalValencePerception2023a">(<a href="#ref-hofbauerEmotionalValencePerception2023a" role="doc-biblioref">Hofbauer and Rodriguez 2023</a>)</span>.</p>
+<section id="data-description" class="level1">
+<h1>Data description</h1>
+<p>Before dig into an analysis, let’s talk about data sources that we will be using. There are two data sources for this analysis report both retrieved by <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-09-14/readme.md">@TidytuesdayData2021</a></p>
+<ol type="1">
+<li><p><strong>Billboard’s top 100 chart songs</strong>: A standard record chart in the US for songs by weekly Billboard magazine including metric on the chart, we will mainly use this to determine weekly track position.</p></li>
+<li><p><strong>Spotify data</strong>: one of the most popular music streaming services, including each detail of the tracks, especially audio features which are the main metric for our analysis!</p></li>
+</ol>
+<p>For detailed data dictionary for both data sources are provided in the <a href="#sec-appendix">data dictionary</a></p>
+</section>
+<section id="changing-trends-in-audio-features-on-the-billboard-charts-throughout-the-2010s-an-analysis" class="level1">
+<h1>Changing Trends in Audio Features on the Billboard Charts Throughout the 2010s: An analysis</h1>
+<p>This chart from <a href="#fig-audio-feat" class="quarto-xref">Figure&nbsp;1</a> demonstrates track features as measured by Spotify, one of the most popular music streaming service. Look at the billboard data from the 2010s, most features are pretty much the same through out the decade. However, four of them saw some significantly changes over the last decades. Acousticness, speechiness, and danceability were the three biggest winners, while energy features faced their biggest downside. These trend shift reflects how listeners’ preferences have changed over time.</p>
+<p>Although taste in music is a subjective things and hard to generalize, many people use music to get moving which could explain the rise in danceability <span class="citation" data-cites="MusicEmotionWellBeing">(<a href="#ref-MusicEmotionWellBeing" role="doc-biblioref"><span>“Music, <span>Emotion</span>, and <span>Well-Being</span> | <span>Psychology Today Australia</span>”</span> n.d.</a>)</span>. Despite a small drop in valence (measuring the the positivity of the track), emotional response can still be influenced by it, especially when it reaches to arousal levels <span class="citation" data-cites="hofbauerEmotionalValencePerception2023a">(<a href="#ref-hofbauerEmotionalValencePerception2023a" role="doc-biblioref">Hofbauer and Rodriguez 2023</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-audio-feat" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
@@ -194,7 +219,7 @@ Figure&nbsp;1: Mean of Audio Features Over Time
 </div>
 </div>
 </div>
-<p>Another aspect is the relationship between tracks that were able to maintain their rank on the chart for a long time and other tracks. From <a href="#tbl-top5" class="quarto-xref">Table&nbsp;1</a>, the top 5 highest tracks in the 2010s, these tracks were on the billboard for more than a year (52 weeks). Long-lasting Billboard hits, such as “Radioactive” with 87 weeks and “Sail” with 79 weeks on the chart, seem to have their unique similarity. They all have high energy (0.784 for “Radioactive”) and are pretty danceable (0.825 for “Sail”). Also, they tend to have low acousticness, meaning it is more focused on music, which might be a reason why they maintain their tracks on the billboard.</p>
+<p>Another interesting aspect is the relationship between tracks that were able to stayed on the charts for a long time and other songs. By looking at the top 5 longest-running tracks in the 2010s in <a href="#tbl-top5" class="quarto-xref">Table&nbsp;1</a>, these songs managed to stayed on the billboard for more than a year (52 weeks). For example, “Radioactive” by Imagine Dragons and “Sail” by AWOLNATION. The interesting thing is these top hit seems to have their similarity. They all have high energy (0.784 for “Radioactive”) and are pretty danceable (0.825 for “Sail”). Another common feature is their low acousticness, meaning they are more focused on music. This might help explain why they held onto their spots for so long.</p>
 <div class="cell" data-layout-align="center">
 <div id="tbl-top5" class="cell quarto-float anchored" data-layout-align="center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -203,13 +228,78 @@ Table&nbsp;1: Top 5 longest tracks on the Billboard
 </figcaption>
 <div aria-describedby="tbl-top5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
+<div>
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed do-not-create-environment cell table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; font-weight: bold;">Song</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; font-weight: bold;">Performer</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; font-weight: bold;">acousticness</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; font-weight: bold;">danceability</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; font-weight: bold;">speechiness</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; font-weight: bold;">energy</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; font-weight: bold;">Weeks on chart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Radioactive</td>
+<td style="text-align: left; width: 3cm;">Imagine Dragons</td>
+<td style="text-align: right;">0.1060</td>
+<td style="text-align: right;">0.448</td>
+<td style="text-align: right;">0.0627</td>
+<td style="text-align: right;">0.784</td>
+<td style="text-align: right;">87</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Sail</td>
+<td style="text-align: left; width: 3cm;">AWOLNATION</td>
+<td style="text-align: right;">0.4520</td>
+<td style="text-align: right;">0.825</td>
+<td style="text-align: right;">0.0568</td>
+<td style="text-align: right;">0.435</td>
+<td style="text-align: right;">79</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Counting Stars</td>
+<td style="text-align: left; width: 3cm;">OneRepublic</td>
+<td style="text-align: right;">0.0654</td>
+<td style="text-align: right;">0.664</td>
+<td style="text-align: right;">0.0382</td>
+<td style="text-align: right;">0.705</td>
+<td style="text-align: right;">68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Party Rock Anthem</td>
+<td style="text-align: left; width: 3cm;">LMFAO Featuring Lauren Bennett &amp; GoonRock</td>
+<td style="text-align: right;">0.0189</td>
+<td style="text-align: right;">0.750</td>
+<td style="text-align: right;">0.1420</td>
+<td style="text-align: right;">0.727</td>
+<td style="text-align: right;">68</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Rolling In The Deep</td>
+<td style="text-align: left; width: 3cm;">Adele</td>
+<td style="text-align: right;">0.1310</td>
+<td style="text-align: right;">0.729</td>
+<td style="text-align: right;">0.0294</td>
+<td style="text-align: right;">0.756</td>
+<td style="text-align: right;">65</td>
+</tr>
+</tbody>
+</table>
+</div>
 
+
+</div>
 </div>
 </div>
 </figure>
 </div>
 </div>
-<p>To discuss <a href="#tbl-top5" class="quarto-xref">Table&nbsp;1</a> in a bigger picture, <a href="#fig-dist" class="quarto-xref">Figure&nbsp;2</a> highlights long-lasting songs generally have lower acousticness and higher energy, aligning with earlier findings, like in the case of “Radioactive.” While danceability and speechiness don’t differ much between short-term and long-lasting tracks, the data suggests that these factors might not significantly impact a song’s chart duration. Instead, tracks with more energy and less acoustic sound are more likely to stay popular on the charts for longer amounts of time. This shows how important these sound elements are for long-term success.</p>
+<p>Looking at the bigger picture from <a href="#tbl-top5" class="quarto-xref">Table&nbsp;1</a>, <a href="#fig-dist" class="quarto-xref">Figure&nbsp;2</a> shows that long-lasting hits tend to have lower acousticness and higher energy, which aligns with what we have found earlier like “Radioactive”. While danceability and speechiness don’t seems to vary much between short and long lasting tracks, suggesting that they might not played a big role in terms of song’s chart duration. Instead, songs with more energy and a less acoustic tend to maintain on the chart longer. This highlights just how important these sound elements for long-term success.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-dist" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
@@ -225,20 +315,9 @@ Figure&nbsp;2: Distribution of Audio Features by Chart Duration
 </div>
 </div>
 </section>
-<section id="brief-methods" class="level1">
-<h1>Brief methods</h1>
-<section id="data-source" class="level2">
-<h2 class="anchored" data-anchor-id="data-source">Data source</h2>
-<p>There are two data sources for this analysis report retrieved by <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-09-14/readme.md">@TidytuesdayData2021</a> First Billboard’s top 100 chart songs, a standard record chart in the US for songs by weekly Billboard magazine. Second, is the data source provided by Spotify, one of the most popular music stream services. Data dictionary for both data sources are provided in the <a href="#sec-appendix">data dictionary</a></p>
-</section>
-<section id="data-wrangling" class="level2">
-<h2 class="anchored" data-anchor-id="data-wrangling">Data wrangling</h2>
-<p>For the data wangling part, all plots and tables were joined with each other by using <strong>song_id</strong>, a concatenate of song name and performer, as a key. For <a href="#fig-audio-feat" class="quarto-xref">Figure&nbsp;1</a> and <a href="#fig-dist" class="quarto-xref">Figure&nbsp;2</a>, data frames have been pivoted into long for an analysis. Before plotting into various perspectives by ggplot2 and table.</p>
-</section>
-</section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>In conclusion, over the past decade, the analysis of Billboard’s top 100 tracks indicates songs that maintain their name on the charts for a long time tend to have more energy and less acousticness, reflecting those songs were more likely to remain on the chart for a long period. However, other features do not have much difference across years and chart duration. Energy and acousticness trend shifting can indicate a transition in listener preference. Further investigation could discover more about another aspect of the success of the tracks.</p>
+<p>To conclude, we analyzed Billboard’s top 100 songs over the past decade and found that long-lasting hits, like “Radioactive” and “Sail,” share key similar audio features such as higher energy and lower acousticness. To be more specific, the more energetic and less acoustic a song is, the more likely it is to stay popular. While danceability and speechiness don’t seem to make a big difference, energy and acousticness are like the secret sauce to a song’s longevity on the charts.</p>
 </section>
 <section id="appendix" class="level1">
 <h1>Appendix</h1>
