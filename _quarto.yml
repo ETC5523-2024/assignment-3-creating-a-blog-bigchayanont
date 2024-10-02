@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "Song Billboard Analysis"
+  title: "Chayapi Blog"
   navbar:
     right:
       - about.qmd
       - icon: github
         href: https://github.com/bigchayanont
+
 format:
   html:
     theme: minty
